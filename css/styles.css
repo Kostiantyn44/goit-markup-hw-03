@@ -166,13 +166,15 @@ p {
   cursor: pointer;
 }
 
-/*SECTION EXAMPLES*/
 .section {
-  background-color: var(--primary-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section .conteiner .list {
+/*SECTION EXAMPLES*/
+.section.examples {
+  background-color: var(--primary-background-color);
+}
+.examples .conteiner .list {
   display: flex;
 }
 .list .list-title {
@@ -184,7 +186,7 @@ p {
   text-transform: uppercase;
 }
 .list .item {
-  width: 270px;
+  flex-basis: calc(100% / 4);
 }
 .list .item + .item {
   margin-left: 30px;
@@ -196,16 +198,17 @@ p {
   font-size: 14px;
   line-height: 1.7;
 }
-.section-title {
+/* Employment */
+.employment {
+  padding-top: 0;
+}
+.employment-title {
   margin-bottom: 50px;
 
   color: var(--secondary-text-color);
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-}
-.list.no-padding {
-  margin-bottom: 94px;
 }
 .list-offer {
   display: flex;
@@ -217,8 +220,6 @@ p {
 /* TEAM */
 .team {
   background-color: var(--third-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .team-title {
   margin-bottom: 50px;
@@ -282,7 +283,7 @@ p {
 
 .footer-adress a {
   display: block;
-  width: 250px; /*вопрос как сделать что бы их ширина была не на всю секцию*/
+  width: 250px; /* как сделать что бы их ховер был не на всю секцию*/
 
   color: var(--color-for-adress);
   font-size: 14px;
@@ -302,9 +303,6 @@ p {
 
 /*two pagers, Filtrs*/
 .filtrs {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--primary-background-color);
 }
 .filtrs .button-list {
